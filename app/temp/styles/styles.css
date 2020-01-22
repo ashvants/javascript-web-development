@@ -354,6 +354,20 @@ body {
     color: #333;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+   color: #d59541; 
+
+}
+
 .large-hero {
     border-bottom: 10px solid #2f5572;
     position: relative;
@@ -452,17 +466,18 @@ body {
     }
 
 .wrapper {
+   
+    overflow: hidden;
     padding-left: 18px;
     padding-right: 18px;
    
-    max-width: 1200px;
+    max-width: 1236px;
     margin-left: auto;
     margin-right: auto;
 
 }
 
 .wrapper--medium{
-        width: 100%;
         max-width: 976px;
 
     }
@@ -471,6 +486,17 @@ body {
         padding-left: 0;
         padding-right: 0;
 
+    }
+
+.wrapper--b-margin {
+        margin-bottom: 1rem;
+    }
+
+@media (min-width: 530px) {
+
+.wrapper--b-margin {
+              margin-bottom: 2rem
+    }
     }
 
 .page-section {
@@ -543,23 +569,67 @@ body {
         margin-bottom: 0.8em;
     }
 
+.headline--no-t-margin{
+        margin-top: 0px;
+    }
+
 .row::after {
         content: "";
         clear: both;
         display: table;
     }
 
-.row__4 {
-        float: left;
-        width: 33.33%;
-
+.row__b-margin-until-medium {
+     margin-bottom: 1rem;   
     }
 
-.row__8{
-        float: left;
-        width: 66.66%;
-    }
+@media (min-width: 800px) {
+
+        .row__b-margin-until-medium {
+            margin-bottom: 0;   
+           }
+
+        .row__medium-4 {
+            float: left;
+            width: 33.33%;
+    
+        }
+    
+        .row__medium-8{
+            float: left;
+            width: 66.66%;
+        }}
+
+.row__medium-4--larger{
+    width: 37%;
+   }
+
+.row__medium-8--smaller{
+    width: 63%;
+}
+
+.row--gutters{
+    margin-right: -50px;
+}
 
 .row--gutters > div {
-    padding-right: 65px;
+    padding-right: 50px;
+   
+    }
+
+.generic-content-container p {
+        line-height: 1.65;
+        text-align: justify;        
+        margin: 1.8rem 0;
+    }
+
+@media (min-width: 530px) {
+
+.generic-content-container p {
+        font-size: 1.125rem
+    }
+    }
+
+.generic-content-container p a {
+        font-weight: 700;
     }
