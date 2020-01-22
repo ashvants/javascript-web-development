@@ -1,0 +1,21 @@
+.row {
+    
+    @mixin clearfix;
+
+    
+    &__4 {
+        float: left;
+        width: 33.33%;
+
+    }
+
+    &__8{
+        float: left;
+        width: 66.66%;
+    }
+
+    &--gutters > div {
+    padding-right: 65px;
+    }
+
+}
