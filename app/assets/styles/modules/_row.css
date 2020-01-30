@@ -18,6 +18,12 @@
             width: 33.33%;
     
         }
+
+        &__medium-6 {
+            float: left;
+            width: 50%;
+
+        }
     
         &__medium-8{
             float: left;
@@ -39,6 +45,20 @@
     &--gutters > div {
     padding-right: 50px;
    
+    }
+
+    &--gutters-large {
+        background-color: darkred;
+        border-width: 2px;
+        border-color: darkred;
+        padding-left: 50px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    &--gutters-large > div {
+            padding-right: 100px;
+        
     }
 
 }
