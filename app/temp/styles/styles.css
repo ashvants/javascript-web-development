@@ -1008,3 +1008,28 @@ text-align: center;
         height: 42px;
         background-position: 92.04013377926421% 86.35616438356163%;
     }
+
+.site-footer {
+    background-color: #2f5572;
+    color: #FFF;
+    padding: .5rem;
+    text-align: center;
+
+}
+
+.site-footer__text {
+        display: block;
+        margin-bottom: 1rem;
+        font-weight: 200;
+
+    }
+
+@media (min-width: 800px) {
+
+.site-footer__text {
+
+           display: inline;
+           margin-bottom: 0; 
+           margin-right: 1.4rem
+
+    }}

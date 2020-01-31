@@ -24,4 +24,9 @@ gulp.task('watch', function() {
         gulp.series('styles', 'cssInject')();
     });
 
+    watch('./app/assets/images/icons/*.svg', function(){
+        
+        gulp.series('icons')();
+    });
+
 });
