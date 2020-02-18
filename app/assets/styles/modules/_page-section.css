@@ -3,7 +3,7 @@
     
 
     @mixin atMedium {
-      padding: 2.5rem 0;  
+      padding: 3.5rem 0;  
     }
     
     &--no-b-padding-until-medium {
@@ -27,6 +27,8 @@
         padding-bottom: 4.5rem;
 
       }
+
+      
 
     }
 

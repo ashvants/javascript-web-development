@@ -492,7 +492,7 @@ a {
     }
 
 .wrapper--b-margin {
-        margin-bottom: 1rem;
+        margin-bottom: 10rem;
     }
 
 @media (min-width: 530px) {
@@ -535,7 +535,7 @@ a {
 @media (min-width: 800px) {
 
 .page-section {
-      padding: 2.5rem 0
+      padding: 3.5rem 0
   }}
 
 .page-section--no-b-padding-until-medium {
@@ -556,6 +556,8 @@ a {
       
       padding-bottom: 0;
 
+      
+
     }
 
 @media (min-width: 1010px) {
@@ -563,6 +565,8 @@ a {
 .page-section--no-b-padding-until-large {
         
         padding-bottom: 4.5rem
+
+      
 
     }}
 
@@ -779,7 +783,7 @@ a {
         font-weight: 300;
         line-height: 1.65;
         text-align: justify;        
-        margin: 0 0 1.8rem 0;
+        margin: 0 0 1.5rem 0;
     }
 
 @media (min-width: 530px) {
@@ -797,7 +801,7 @@ a {
     font-size: 2.55rem;
     font-weight: 300;
     text-align: center;
-    margin-top: 0.5em;
+    margin-top: 1.5em;
 }
 
 @media (min-width: 530px) {
@@ -845,7 +849,6 @@ a {
     position: relative;
     padding-left: 94px;
     padding-top: 1.5rem;
-    padding-bottom: 2.5rem;
 }
 
 @media (min-width: 530px) {
@@ -1058,9 +1061,13 @@ text-align: center;
 @media (min-width: 800px) {
 
 .site-header {
-
+        position: fixed;
         background: rgba(47,85,114, .30)
-}}
+}
+
+    .site-header--dark {
+        background-color: rgba(23, 51, 72, .85);
+    }}
 
 @media (min-width: 800px) {
 
@@ -1075,6 +1082,10 @@ text-align: center;
         left: 50%;
         -webkit-transform: translateX(-50%) scale(.8);
                 transform: translateX(-50%) scale(.8);
+        -webkit-transition: -webkit-transform .3s ease-out;
+        transition: -webkit-transform .3s ease-out;
+        transition: transform .3s ease-out;
+        transition: transform .3s ease-out, -webkit-transform .3s ease-out;
         -webkit-transform-origin: 50% 0%;
                 transform-origin: 50% 0%;
         background: #2f5572;
@@ -1089,7 +1100,12 @@ text-align: center;
             -webkit-transform: translateX(0%);
                     transform: translateX(0%)
 
-    }}
+    }
+
+            .site-header--dark .site-header__logo {
+                -webkit-transform: scale(0.57);
+                        transform: scale(0.57);
+            }}
 
 .site-header__logo__graphic {
         text-indent: -999px;
@@ -1283,7 +1299,11 @@ text-align: center;
             padding: 12px 0;
             font-size: 1rem;
             background-color: transparent
-    }}
+    }
+
+        .primary-nav a.is-current-link {
+            color: #fabb69;
+        }}
 
 .primary-nav a:hover {
 
