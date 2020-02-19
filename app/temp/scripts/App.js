@@ -11439,7 +11439,6 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);
 
-
 class MobileMenu {
     constructor() {
         this.siteHeader = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".site-header");
@@ -11456,7 +11455,7 @@ class MobileMenu {
     toggleTheMenu() {
         this.menuContent.toggleClass("site-header__menu-content--is-visible");
         this.siteHeader.toggleClass("site-header--is-expanded");
-        this.menuIcon.toggleClass("site-header__menu-icon--close-x")
+        this.menuIcon.toggleClass("site-header__menu-icon--close-x");
     }
 }
 /* harmony default export */ exports["a"] = MobileMenu;
@@ -11471,7 +11470,7 @@ class MobileMenu {
 
 
 class Modal {
-    constructor(){
+    constructor() {
         this.openModalButton = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".open-modal");
         this.modal = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".modal");
         this.closeModalButton=__WEBPACK_IMPORTED_MODULE_0_jquery___default()(".modal__close");
@@ -12033,7 +12032,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
 var mobileMenu = new __WEBPACK_IMPORTED_MODULE_0__modules_MobileMenu__["a" /* default */]();
 var stickyHeader = new __WEBPACK_IMPORTED_MODULE_3__modules_StickyHeader__["a" /* default */]();
-var smodal = new __WEBPACK_IMPORTED_MODULE_4__modules_Modal__["a" /* default */]();
+var modal = new __WEBPACK_IMPORTED_MODULE_4__modules_Modal__["a" /* default */]();
 
 new __WEBPACK_IMPORTED_MODULE_1__modules_RevealOnScroll__["a" /* default */](__WEBPACK_IMPORTED_MODULE_2_jquery___default()(".feature-item"), "85%");
 new __WEBPACK_IMPORTED_MODULE_1__modules_RevealOnScroll__["a" /* default */](__WEBPACK_IMPORTED_MODULE_2_jquery___default()(".testimonial"), "70%");

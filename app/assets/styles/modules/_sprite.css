@@ -2,11 +2,11 @@
 
 
             .icon {
-                    background-image: url('/assets/images/sprites/sprite-581a1c7a.svg'); 
+                    background-image: url('../../assets/images/sprites/sprite-581a1c7a.svg'); 
         }
 
         .no-svg .icon {
-            background-image: url('/assets/images/sprites/sprite-581a1c7a.png'); 
+            background-image: url('../../assets/images/sprites/sprite-581a1c7a.png'); 
         }
 
     .icon--clear-view-escapes {
