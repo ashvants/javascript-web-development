@@ -21,7 +21,7 @@ gulp.task('watch', function() {
     });
 
     watch('./app/assets/scripts/**/*.js', function(){
-        gulp.series('scripts', 'scriptsRefresh')();
+        gulp.series('modernizr', 'scripts', 'scriptsRefresh')();
     });
 
     watch('./app/assets/images/icons/*.svg', function(){
